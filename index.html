@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek | Java Developer</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg,#0f172a,#1e293b);
+        }
+
+        .card{
+            width:420px;
+            background:rgba(255,255,255,0.08);
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            color:white;
+            backdrop-filter:blur(10px);
+            box-shadow:0 10px 30px rgba(0,0,0,0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float{
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                transform:translateY(-10px);
+            }
+            100%{
+                transform:translateY(0px);
+            }
+        }
+
+        .logo{
+            font-size:70px;
+            margin-bottom:10px;
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        h2{
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        p{
+            color:#cbd5e1;
+            line-height:1.7;
+            margin-bottom:15px;
+        }
+
+        .skills{
+            margin-top:20px;
+        }
+
+        .skill{
+            display:inline-block;
+            background:#38bdf8;
+            color:black;
+            padding:8px 15px;
+            margin:5px;
+            border-radius:20px;
+            font-weight:bold;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:12px 25px;
+            background:#38bdf8;
+            color:black;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#0ea5e9;
+            transform:scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="logo">☕</div>
+
+        <h1>Prateek</h1>
+
+        <h2>Java Developer</h2>
+
+        <p>
+            Passionate Backend Developer specializing in Java,
+            Spring Boot, REST APIs, MySQL, and scalable applications.
+        </p>
+
+        <div class="skills">
+            <span class="skill">Java</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">REST API</span>
+        </div>
+
+        <a href="#" class="btn">Connect With Me</a>
+
+    </div>
+
+</body>
+</html>
